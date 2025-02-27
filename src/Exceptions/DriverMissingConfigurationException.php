@@ -15,6 +15,6 @@ class DriverMissingConfigurationException extends InvalidArgumentException
      */
     public static function make($provider, $keys)
     {
-        return new static("Missing required configuration keys [" . implode(', ', $keys) . "] for [{$provider}] OAuth provider.");
+        return new static('Missing required configuration keys ['.implode(', ', $keys)."] for [{$provider}] OAuth provider.");
     }
-} 
+}

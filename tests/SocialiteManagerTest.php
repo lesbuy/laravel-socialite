@@ -90,7 +90,7 @@ class SocialiteManagerTest extends TestCase
             'client_id' => 'github-client-id',
             'redirect' => 'http://your-callback-url',
         ]);
-        
+
         $factory->driver('github');
     }
 
