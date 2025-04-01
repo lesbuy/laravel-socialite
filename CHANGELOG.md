@@ -1,6 +1,12 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/socialite/compare/v5.18.0...5.x)
+## [Unreleased](https://github.com/laravel/socialite/compare/v5.19.0...5.x)
+
+## [v5.19.0](https://github.com/laravel/socialite/compare/v5.18.0...v5.19.0) - 2025-03-27
+
+* docs: sync readme with recent adapters by [@iBotPeaches](https://github.com/iBotPeaches) in https://github.com/laravel/socialite/pull/735
+* [5.x] Throw exception if config is incomplete by [@mateusjatenee](https://github.com/mateusjatenee) in https://github.com/laravel/socialite/pull/736
+* Supports PHPStan 1.12 by [@crynobone](https://github.com/crynobone) in https://github.com/laravel/socialite/pull/739
 
 ## [v5.18.0](https://github.com/laravel/socialite/compare/v5.17.1...v5.18.0) - 2025-02-11
 
