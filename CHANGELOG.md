@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/socialite/compare/v5.19.0...5.x)
+## [Unreleased](https://github.com/laravel/socialite/compare/v5.20.0...5.x)
+
+## [v5.20.0](https://github.com/laravel/socialite/compare/v5.19.0...v5.20.0) - 2025-04-21
+
+* Update logo by [@iamdavidhill](https://github.com/iamdavidhill) in https://github.com/laravel/socialite/pull/741
+* Added email to X provider by [@maicol07](https://github.com/maicol07) in https://github.com/laravel/socialite/pull/742
 
 ## [v5.19.0](https://github.com/laravel/socialite/compare/v5.18.0...v5.19.0) - 2025-03-27
 
