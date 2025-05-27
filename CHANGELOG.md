@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/socialite/compare/v5.20.0...5.x)
+## [Unreleased](https://github.com/laravel/socialite/compare/v5.21.0...5.x)
+
+## [v5.21.0](https://github.com/laravel/socialite/compare/v5.20.0...v5.21.0) - 2025-05-19
+
+* Added email and it's scope to TwitterProvider by [@abdulmejidshemsuawel](https://github.com/abdulmejidshemsuawel) in https://github.com/laravel/socialite/pull/744
 
 ## [v5.20.0](https://github.com/laravel/socialite/compare/v5.19.0...v5.20.0) - 2025-04-21
 
