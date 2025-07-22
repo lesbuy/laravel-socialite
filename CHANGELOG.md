@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/socialite/compare/v5.21.0...5.x)
+## [Unreleased](https://github.com/laravel/socialite/compare/v5.22.0...5.x)
+
+## [v5.22.0](https://github.com/laravel/socialite/compare/v5.21.0...v5.22.0) - 2025-07-08
+
+* Fix return type for functions which make use of json_decode by [@michaelklopf](https://github.com/michaelklopf) in https://github.com/laravel/socialite/pull/745
+* feat(google): stateless ID token support by [@beefsack](https://github.com/beefsack) in https://github.com/laravel/socialite/pull/748
 
 ## [v5.21.0](https://github.com/laravel/socialite/compare/v5.20.0...v5.21.0) - 2025-05-19
 
