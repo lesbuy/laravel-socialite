@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/socialite/compare/v5.22.0...5.x)
+## [Unreleased](https://github.com/laravel/socialite/compare/v5.23.0...5.x)
+
+## [v5.23.0](https://github.com/laravel/socialite/compare/v5.22.0...v5.23.0) - 2025-07-23
+
+* Fix the Facebook avatar URL by [@joaopms](https://github.com/joaopms) in https://github.com/laravel/socialite/pull/750
+* Update Facebook Graph API version to v23.0 by [@joaopms](https://github.com/joaopms) in https://github.com/laravel/socialite/pull/749
 
 ## [v5.22.0](https://github.com/laravel/socialite/compare/v5.21.0...v5.22.0) - 2025-07-08
 
