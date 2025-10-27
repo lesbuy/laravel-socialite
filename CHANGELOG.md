@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/socialite/compare/v5.23.0...5.x)
+## [Unreleased](https://github.com/laravel/socialite/compare/v5.23.1...5.x)
+
+## [v5.23.1](https://github.com/laravel/socialite/compare/v5.23.0...v5.23.1) - 2025-10-27
+
+**Full Changelog**: https://github.com/laravel/socialite/compare/v5.23.0...v5.23.1
 
 ## [v5.23.0](https://github.com/laravel/socialite/compare/v5.22.0...v5.23.0) - 2025-07-23
 
