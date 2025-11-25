@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/socialite/compare/v5.23.1...5.x)
+## [Unreleased](https://github.com/laravel/socialite/compare/v5.23.2...5.x)
+
+## [v5.23.2](https://github.com/laravel/socialite/compare/v5.23.1...v5.23.2) - 2025-11-21
+
+* [5.x] PHP 8.5 Compatibility by [@crynobone](https://github.com/crynobone) in https://github.com/laravel/socialite/pull/755
 
 ## [v5.23.1](https://github.com/laravel/socialite/compare/v5.23.0...v5.23.1) - 2025-10-27
 
