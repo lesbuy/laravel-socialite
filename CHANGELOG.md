@@ -1,6 +1,11 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/socialite/compare/v5.24.0...5.x)
+## [Unreleased](https://github.com/laravel/socialite/compare/v5.24.1...5.x)
+
+## [v5.24.1](https://github.com/laravel/socialite/compare/v5.24.0...v5.24.1) - 2026-01-01
+
+* Remove redundant `email` mapping causing error for unconfirmed X accounts by [@Gertiozuni](https://github.com/Gertiozuni) in https://github.com/laravel/socialite/pull/757
+* chore: update firebase/php-jwt package by [@itsalifadaei](https://github.com/itsalifadaei) in https://github.com/laravel/socialite/pull/758
 
 ## [v5.24.0](https://github.com/laravel/socialite/compare/v5.23.2...v5.24.0) - 2025-12-09
 
