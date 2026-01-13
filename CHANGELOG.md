@@ -1,6 +1,10 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/socialite/compare/v5.24.1...5.x)
+## [Unreleased](https://github.com/laravel/socialite/compare/v5.24.2...5.x)
+
+## [v5.24.2](https://github.com/laravel/socialite/compare/v5.24.1...v5.24.2) - 2026-01-10
+
+* Fix FakeProvider to preserve decorator pattern when forwarding calls by [@mohammedmanssour](https://github.com/mohammedmanssour) in https://github.com/laravel/socialite/pull/760
 
 ## [v5.24.1](https://github.com/laravel/socialite/compare/v5.24.0...v5.24.1) - 2026-01-01
 
