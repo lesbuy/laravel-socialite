@@ -8,6 +8,7 @@ use Illuminate\Support\Str;
 use InvalidArgumentException;
 use Laravel\Socialite\Exceptions\DriverMissingConfigurationException;
 use Laravel\Socialite\One\TwitterProvider;
+use Laravel\Socialite\Two\BaiduProvider;
 use Laravel\Socialite\Two\BitbucketProvider;
 use Laravel\Socialite\Two\FacebookProvider;
 use Laravel\Socialite\Two\GithubProvider;
@@ -19,6 +20,10 @@ use Laravel\Socialite\Two\SlackOpenIdProvider;
 use Laravel\Socialite\Two\SlackProvider;
 use Laravel\Socialite\Two\TwitchProvider;
 use Laravel\Socialite\Two\TwitterProvider as TwitterOAuth2Provider;
+use Laravel\Socialite\Two\WeiboProvider;
+use Laravel\Socialite\Two\WeixinProvider;
+use Laravel\Socialite\Two\WangqiuProvider;
+use Laravel\Socialite\Two\WuhanProvider;
 use Laravel\Socialite\Two\XProvider;
 use League\OAuth1\Client\Server\Twitter as TwitterServer;
 
@@ -42,6 +47,76 @@ class SocialiteManager extends Manager implements Contracts\Factory
     public function with($driver)
     {
         return $this->driver($driver);
+    }
+
+    /** 
+     * Create an instance of the specified driver.
+     *
+     * @return \Laravel\Socialite\Two\AbstractProvider
+     */
+    protected function createBaiduDriver()
+    {   
+        $config = $this->config->get('services.baidu');
+         
+        return $this->buildProvider(
+            BaiduProvider::class, $config
+        );  
+    }   
+         
+    /** 
+     * Create an instance of the specified driver.
+     *
+     * @return \Laravel\Socialite\Two\AbstractProvider
+     */
+    protected function createWeiboDriver()
+    {   
+        $config = $this->config->get('services.weibo');
+         
+        return $this->buildProvider(
+            WeiboProvider::class, $config
+        );  
+    }
+
+    /**
+     * Create an instance of the specified driver.
+     *
+     * @return \Laravel\Socialite\Two\AbstractProvider
+     */
+    protected function createWeixinDriver()
+    {
+        $config = $this->config->get('services.weixin');
+    
+        return $this->buildProvider(
+            WeixinProvider::class, $config
+        );
+    }
+    
+    /**
+     * Create an instance of the specified driver.
+     *
+     * @return \Laravel\Socialite\Two\AbstractProvider
+     */
+    protected function createWangqiuDriver()
+    {
+        $config = $this->config->get('services.wangqiu');
+    
+        return $this->buildProvider(
+            WangqiuProvider::class, $config
+        );
+    }
+    
+    /**
+     * Create an instance of the specified driver.
+     *
+     * @return \Laravel\Socialite\Two\AbstractProvider
+     */
+    protected function createWuhanDriver()
+    {
+        $config = $this->config->get('services.wuhan');
+    
+        return $this->buildProvider(
+            WuhanProvider::class, $config
+        );
     }
 
     /**
