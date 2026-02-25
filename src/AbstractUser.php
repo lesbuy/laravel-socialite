@@ -42,6 +42,18 @@ abstract class AbstractUser implements ArrayAccess, User
      */
     public $avatar;
 
+    public $avatar_original;
+    public $type;
+    public $gender;
+    public $birth;
+    public $location;
+    public $detail;
+    public $profileUrl;
+    public $mobile;
+    public $openid = null;
+    public $unionid = null;
+    public $redirect;
+
     /**
      * The user's raw attributes.
      *
@@ -104,6 +116,29 @@ abstract class AbstractUser implements ArrayAccess, User
     public function getAvatar()
     {
         return $this->avatar;
+    }
+
+    public function getBigAvatar()
+    {
+        return $this->avatar_original;
+    }
+    public function getType()
+    {
+        return $this->type;
+    }
+    public function getGender()
+    {
+        return $this->gender;
+    }
+    public function getRedirect()
+    {
+        return $this->redirect;
+    }
+    public function getOpenid() {
+            return $this->openid;
+    }
+    public function getUnionid() {
+            return $this->unionid;
     }
 
     /**
