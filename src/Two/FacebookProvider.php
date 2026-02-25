@@ -2,6 +2,7 @@
 
 namespace Laravel\Socialite\Two;
 
+use Config;
 use Exception;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
@@ -186,13 +187,19 @@ class FacebookProvider extends AbstractProvider implements ProviderInterface
      */
     protected function mapUserToObject(array $user)
     {
+        $avatarUrl = "";
+        if (!isset($user['sub'])) {
+            $avatarUrl = $this->graphUrl.'/'.$this->version.'/'.$user['id'].'/picture';
+        }
         return (new User)->setRaw($user)->map([
             'id' => $user['id'],
             'nickname' => null,
+            'type' => Config::get('const.USERTYPE_FACEBOOK'),
             'name' => $user['name'] ?? null,
             'email' => $user['email'] ?? null,
-            'avatar' => $avatarUrl = Arr::get($user, 'picture.data.url'),
-            'avatar_original' => $avatarUrl,
+            'gender' => Arr::get($user, 'gender') == "male" ? 1 : (Arr::get($user, 'gender') == "female" ? 2 : 0), 
+            'avatar' => $avatarUrl.'?type=normal',
+            'avatar_original' => $avatarUrl.'?type=large',
             'profileUrl' => $user['link'] ?? null,
         ]);
     }

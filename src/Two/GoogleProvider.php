@@ -2,6 +2,7 @@
 
 namespace Laravel\Socialite\Two;
 
+use Config;
 use Exception;
 use Firebase\JWT\JWK;
 use Firebase\JWT\JWT;
@@ -93,11 +94,15 @@ class GoogleProvider extends AbstractProvider implements ProviderInterface
 
         return (new User)->setRaw($user)->map([
             'id' => Arr::get($user, 'sub'),
+            'type' => Config::get('const.USERTYPE_GOOGLE'),
             'nickname' => Arr::get($user, 'nickname'),
             'name' => Arr::get($user, 'name'),
             'email' => Arr::get($user, 'email'),
             'avatar' => $avatarUrl = Arr::get($user, 'picture'),
-            'avatar_original' => $avatarUrl,
+            'avatar_original' => preg_replace('/\?sz=([0-9]+)/', '', $avatarUrl),
+            'gender' => Arr::get($user, 'gender') == "male" ? 1 : (Arr::get($user, 'gender') == "female" ? 2 : 0),
+            'location' => Arr::get($user, 'placesLived'),
+            'profileUrl' => Arr::get($user, 'picture'),
         ]);
     }
 
